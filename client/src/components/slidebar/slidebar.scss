@@ -1,0 +1,69 @@
+.sliderbar{
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .arrow{
+        height: 50px;
+        position: absolute;
+        cursor: pointer;
+        &.left{
+            left: 100px;
+            transform: rotateY(180deg);
+        }
+        &.right{
+            right: 100px;
+
+        }
+    }
+
+    .slider{
+        height: 350px;
+        display: flex;
+        position: absolute;
+        left: 0;
+        transform: all 1s ease-out;
+    
+        .container{
+            width: 100vw;
+            display: flex;
+            align-items: center;justify-content: center;
+
+            .item{
+                width: 700px;
+                height: 100%;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                position: relative;
+                        .imgContainer{
+                            width: 100%;
+                            height: 90%;
+                            border-radius: 50%;
+                            background: rgb(248, 152, 117);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            img{
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        h2{
+                            font-size: 20px;
+                            color: white;
+                            position: absolute;
+                            bottom: 10px;
+                        }
+                
+            }
+    }
+    }
+    
+}
